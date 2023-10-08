@@ -1,0 +1,35 @@
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap:1;
+    font-weight: bold;
+    font-size: x-large;
+    height: 0.5em;
+    padding: 0.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em rgb(215, 95, 95));
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em rgb(163, 114, 114));
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  
